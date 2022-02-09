@@ -33,6 +33,7 @@ Route::get('/episode/{id}', [HomeController::class, 'showEpisode'])->name('episo
 ///////////////////////////////////////////////////////////////////
 
 
+Route::redirect('databases', 'databases/character');
 ///GET ALL CHARACTES FROM DATABASE
 Route::get('/databases/character', [DatabaseController::class, 'indexCharacter'])->name('charactes.database');
 Route::get('/databases/character/{id}', [DatabaseController::class, 'showCharacter'])->name('character.show.database');
