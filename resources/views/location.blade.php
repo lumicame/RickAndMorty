@@ -65,7 +65,7 @@ $.ajax({
                 type: "GET",
             success: function(data) {
             $('#content').html("");
-            data.residents.forEach(element => $('#content').append('<p><a href="{{url("character")}}'+element+'" > Character '+element.slice(42)
+            data.residents.forEach(element => $('#content').append('<p><a href="{{url("character")}}/'+element.slice(42)+'" > Character '+element.slice(42)
             	+'</a></p>'));
           myModal.show()
           },error : function(xhr, status) {
